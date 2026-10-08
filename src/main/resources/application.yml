@@ -1,0 +1,19 @@
+server:
+  port: 8099
+
+spring:
+  build:
+    version: 0.0.1
+  application:
+    name: challenge
+    description: challenge test
+  mvc:
+    servlet:
+      path: /challenge
+    pathmatch:
+      matching-strategy: ant_path_matcher
+    throw-exception-if-no-handler-found: true
+
+logging:
+  level:
+    _org.springframework.web.servlet.HandlerMapping.Mappings: debug
